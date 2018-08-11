@@ -9,7 +9,6 @@
             gridColor: '#ccc',
         },
          data: [{
-                fillOpacity: 1,
                  type: 'stackedBar',
                  dataPoints: [{
                          x: new Date(2012, 01, 1),

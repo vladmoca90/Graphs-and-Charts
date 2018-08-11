@@ -1,44 +1,42 @@
 window.onload = function () {
 
-    var chart = new CanvasJS.Chart('bar', {
+    var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
-        dataPointWidth: 40,
+        dataPointWidth: 33,
         title: {
-            fontSize: 21,
-            fontWeight: 'lighter',
+            fontSize: 18,
+            fontFamily: 'Verdana',
             padding: 20,
-            text: 'Crude Oil Reserves vs Production, 2016',
+            text: 'Crude Oil Reserves vs Production',
         },
         axisX: {
-            labelFontSize: 14,
+            titleFontSize: 13,
         },
         axisY: {
-            gridColor: '#ccc',
             title: 'Billions of Barrels',
-            titleFontColor: '#4F81BC',
-            titleFontSize: 16,
-            lineColor: '#4F81BC',
-            labelFontColor: '#4F81BC',
-            labelFontSize: 12,
-            tickColor: '#4F81BC'
+            titleFontColor: '#5C6BC0',
+            titleFontSize: 13,
+            gridColor: '#ccc',
+            labelFontSize: 11,
+            labelFontColor: '#5C6BC0',
         },
         axisY2: {
             title: 'Millions of Barrels/day',
-            titleFontColor: '#C0504E',
-            titleFontSize: 16,
-            lineColor: '#C0504E',
-            labelFontColor: '#C0504E',
-            labelFontSize: 12,
-            tickColor: '#C0504E'
+            titleFontColor: '#c62828',
+            titleFontSize: 13,
+            gridColor: '#ccc',
+            labelFontSize: 11,
+            labelFontColor: '#c62828',
         },
         toolTip: {
-            shared: true
+            shared: true,
         },
         data: [{
                 type: 'column',
+                color: '#5C6BC0',
                 name: 'Proven Oil Reserves (bn)',
                 legendText: 'Proven Oil Reserves',
-                fillOpacity: .75,
+                fillOpacity: 0.75,
                 showInLegend: true,
                 dataPoints: [{
                         label: 'Saudi Arabia',
@@ -63,15 +61,20 @@ window.onload = function () {
                     {
                         label: 'UAE',
                         y: 97.8
+                    },
+                    {
+                        label: 'Russia',
+                        y: 80
                     }
                 ]
             },
             {
                 type: 'column',
+                color: '#c62828',
                 name: 'Oil Production (million/day)',
                 legendText: 'Oil Production',
+                fillOpacity: 0.75,
                 axisYType: 'secondary',
-                fillOpacity: .75,
                 showInLegend: true,
                 dataPoints: [{
                         label: 'Saudi Arabia',
@@ -96,6 +99,10 @@ window.onload = function () {
                     {
                         label: 'UAE',
                         y: 3.1
+                    },
+                    {
+                        label: 'Russia',
+                        y: 10.3
                     }
                 ]
             }
