@@ -1,32 +1,40 @@
  window.onload = function () {
+     CanvasJS.addColorSet('medalsColors', [
+        '#FFCA28',
+        '#BDBDBD',
+        '#CC9966',
+    ]);
      var chart = new CanvasJS.Chart('medalsChart', {
+         colorSet: 'medalsColors',
          title: {
-             text: 'Olympic Medals of all Times (till 2012 Olympics)'
+             fontFamily: 'Tahoma',
+             fontSize: 21,
+             padding: 20,
+             text: '2016 Summer Olympics medal count'
+         },
+         axisY: {
+             gridColor: '#ddd',
          },
          data: [{
                  type: 'bar',
                  dataPoints: [{
-                         y: 198,
-                         label: 'Italy'
+                         y: 17,
+                         label: 'Germany'
                      },
                      {
-                         y: 201,
+                         y: 19,
+                         label: 'Russia'
+                     },
+                     {
+                         y: 26,
                          label: 'China'
                      },
                      {
-                         y: 202,
-                         label: 'France'
-                     },
-                     {
-                         y: 236,
+                         y: 27,
                          label: 'Great Britain'
                      },
                      {
-                         y: 395,
-                         label: 'Soviet Union'
-                     },
-                     {
-                         y: 957,
+                         y: 46,
                          label: 'USA'
                      }
                  ]
@@ -34,27 +42,23 @@
              {
                  type: 'bar',
                  dataPoints: [{
-                         y: 166,
-                         label: 'Italy'
+                         y: 10,
+                         label: 'Germany'
                      },
                      {
-                         y: 144,
+                         y: 17,
+                         label: 'Russia'
+                     },
+                     {
+                         y: 18,
                          label: 'China'
                      },
                      {
-                         y: 223,
-                         label: 'France'
-                     },
-                     {
-                         y: 272,
+                         y: 23,
                          label: 'Great Britain'
                      },
                      {
-                         y: 319,
-                         label: 'Soviet Union'
-                     },
-                     {
-                         y: 759,
+                         y: 37,
                          label: 'USA'
                      }
                  ]
@@ -62,27 +66,23 @@
              {
                  type: 'bar',
                  dataPoints: [{
-                         y: 185,
-                         label: 'Italy'
+                         y: 15,
+                         label: 'Germany'
                      },
                      {
-                         y: 128,
+                         y: 19,
+                         label: 'Russia'
+                     },
+                     {
+                         y: 26,
                          label: 'China'
                      },
                      {
-                         y: 246,
-                         label: 'France'
-                     },
-                     {
-                         y: 272,
+                         y: 17,
                          label: 'Great Britain'
                      },
                      {
-                         y: 296,
-                         label: 'Soviet Union'
-                     },
-                     {
-                         y: 666,
+                         y: 38,
                          label: 'USA'
                      }
                  ]
