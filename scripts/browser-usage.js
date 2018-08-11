@@ -1,13 +1,14 @@
  window.onload = function () {
      var chart = new CanvasJS.Chart('browser-chart', {
          title: {
-             text: '% Browser usage'
+             text: '% Browser usage',
+             fontSize: 19,
          },
          axisY: {
              suffix: '%',
          },
          data: [{
-             innerRadius: 50,
+             innerRadius: 60,
              type: 'doughnut',
              dataPoints: [{
                      y: 37,
