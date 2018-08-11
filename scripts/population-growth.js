@@ -1,60 +1,67 @@
 window.onload = function () {
-  var chart = new CanvasJS.Chart('line-bar', {
-
+  var chart = new CanvasJS.Chart('pop-growth', {
     title: {
-      fontSize: 21,
-      text: 'Population growth - by decade'
+      fontFamily: 'Verdana',
+      fontSize: 18,
+      padding: 20,
+      text: 'Population growth in Nigeria by year (1960 - 2010)',
+    },
+    toolTip: {
+      enabled: false //enable here
+    },
+    axisX: {
+      intervalType: 'year',
+      valueFormatString: 'YYYY',
+    },
+    axisY: {
+      gridColor: '#ccc',
     },
     data: [{
       type: 'line',
-
+      color: '#d50000',
       dataPoints: [{
-          x: new Date(1930, 01, 01),
-          y: 1.9
+          x: 1960,
+          y: 42.9
         },
         {
-          x: new Date(1940, 01, 01),
-          y: 7.2
+          x: 1965,
+          y: 50.5
         },
         {
-          x: new Date(1950, 01, 01),
-          y: 12.9
+          x: 1970,
+          y: 58.8
         },
         {
-          x: new Date(1960, 01, 01),
-          y: 18.1
+          x: 1975,
+          y: 66.5
         },
         {
-          x: new Date(1970, 01, 01),
-          y: 23.3
+          x: 1980,
+          y: 76.7
         },
         {
-          x: new Date(1980, 01, 01),
-          y: 29.8
+          x: 1985,
+          y: 82.4
         },
         {
-          x: new Date(1990, 01, 01),
-          y: 34.4
+          x: 1990,
+          y: 89.9
         },
         {
-          x: new Date(2000, 01, 01),
-          y: 36.9
+          x: 1995,
+          y: 101.9
         },
         {
-          x: new Date(2010, 01, 01),
-          y: 39.9
+          x: 2000,
+          y: 116.7
         },
         {
-          x: new Date(2020, 01, 01),
-          y: 40.4
+          x: 2005,
+          y: 132.5
         },
         {
-          x: new Date(2030, 01, 01),
-          y: 39.9
-        },
-        {
-          x: new Date(2040, 01, 01),
-          y: 39.1
+          x: 2010,
+          y: 155.9
         }
       ]
     }]
