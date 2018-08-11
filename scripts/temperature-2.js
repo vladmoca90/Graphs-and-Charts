@@ -1,6 +1,7 @@
 window.onload = function () {
     var chart = new CanvasJS.Chart('temperature2', {
         title: {
+            fontSize: 18,
             margin: 20,
             text: 'UK Temperature (1 Jan - 31 Dec) 2017',
         },
