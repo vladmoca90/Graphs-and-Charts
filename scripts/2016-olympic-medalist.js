@@ -1,9 +1,9 @@
  window.onload = function () {
      CanvasJS.addColorSet('medalsColors', [
-        '#FFCA28',
-        '#BDBDBD',
-        '#CC9966',
-    ]);
+         '#FFCA28',
+         '#BDBDBD',
+         '#CC9966',
+     ]);
      var chart = new CanvasJS.Chart('medalsChart', {
          colorSet: 'medalsColors',
          title: {
@@ -17,6 +17,8 @@
          },
          data: [{
                  type: 'bar',
+                 showInLegend: true,
+                 legendText: 'Gold',
                  dataPoints: [{
                          y: 17,
                          label: 'Germany'
@@ -41,6 +43,8 @@
              },
              {
                  type: 'bar',
+                 showInLegend: true,
+                 legendText: 'Silver',
                  dataPoints: [{
                          y: 10,
                          label: 'Germany'
@@ -65,6 +69,8 @@
              },
              {
                  type: 'bar',
+                 showInLegend: true,
+                 legendText: 'Bronze',
                  dataPoints: [{
                          y: 15,
                          label: 'Germany'
