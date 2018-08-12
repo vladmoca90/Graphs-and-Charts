@@ -1,5 +1,4 @@
 window.onload = function () {
-
     var chart = new CanvasJS.Chart('pyramid', {
         title: {
             text: 'Pyramid of Maslow'
@@ -7,29 +6,30 @@ window.onload = function () {
         data: [{
             type: 'pyramid',
             dataPoints: [{
-                    y: 30000,
-                    label: 'Stocks'
+                    y: 1,
+                    label: 'Psychological',
+                    color: '#9C27B0',
                 },
                 {
-                    y: 22000,
-                    label: 'Bonds'
+                    y: 1,
+                    label: 'Safety',
+                    color: '#F44336',
                 },
                 {
-                    y: 20000,
-                    label: 'Real Estate'
+                    y: 1,
+                    label: 'Love/belonging',
+                    color: '#E91E63',
                 },
                 {
-                    y: 15000,
-                    label: 'Annuities'
+                    y: 1,
+                    label: 'Esteem',
+                    color: '#FFEB3B',
                 },
                 {
-                    y: 8000,
-                    label: 'Insurance'
+                    y: 1,
+                    label: 'Self-actualization',
+                    color: '#2196F3',
                 },
-                {
-                    y: 10000,
-                    label: 'Cash'
-                }
             ]
         }]
     });
