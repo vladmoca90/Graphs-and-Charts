@@ -27,9 +27,13 @@
                      indexLabel: 'IE'
                  },
                  {
+                     y: 2,
+                     indexLabel: 'Samsung Internet'
+                 },
+                 {
                      y: 5,
                      indexLabel: 'Others'
-                 }
+                 },
              ]
          }]
      });
