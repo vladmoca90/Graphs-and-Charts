@@ -1,5 +1,5 @@
  window.onload = function () {
-     var chart = new CanvasJS.Chart('sales-bar', {
+     var chart = new CanvasJS.Chart('salesBar', {
          title: {
              fontSize: 21,
              text: 'Evening Sales of a Restaurant'

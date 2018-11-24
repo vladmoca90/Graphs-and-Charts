@@ -1,5 +1,5 @@
  window.onload = function () {
-     var chart = new CanvasJS.Chart('browser-chart', {
+     var chart = new CanvasJS.Chart('browserChart', {
          title: {
              text: '% Browser usage',
              fontSize: 19,

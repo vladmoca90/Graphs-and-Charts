@@ -1,5 +1,5 @@
 window.onload = function () {
-  var chart = new CanvasJS.Chart('pop-growth', {
+  var chart = new CanvasJS.Chart('popGrowth', {
     title: {
       fontFamily: 'Verdana',
       fontSize: 18,
