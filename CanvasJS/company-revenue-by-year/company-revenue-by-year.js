@@ -20,12 +20,17 @@ $(function() {
             throw new Error('The list must be given');
         }
 
-        for(var i = 0; data.length == 0; i++) {
+        for(var i = 0; i < data.length; i++) {
+            var points = {};
 
+            points.x = data[i][0];
+            points.y = parseInt(data[i][1]);
         }
+
+        return revenue.push(points);
     }
 
-    showRevenue(revenue);
+    showRevenue(data);
 
     window.onload = function () {
 
