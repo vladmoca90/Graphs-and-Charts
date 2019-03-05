@@ -98,6 +98,6 @@
               ]
           });
 
-          chart.render();
+           $("#medalsChart").CanvasJSChart(options);
       }
   });
