@@ -13,7 +13,7 @@ $(function() {
         [new Date(2010, 0), '2438000'],
     ];
 
-    var revenue = [];
+     var revenue = [];
 
     function showRevenue(data) {
         if(data.length == 0) {
@@ -25,9 +25,11 @@ $(function() {
 
             points.x = data[i][0];
             points.y = parseInt(data[i][1]);
+
+            revenue.push(points);
         }
 
-        return revenue.push(points);
+       return revenue;
     }
 
     showRevenue(data);
