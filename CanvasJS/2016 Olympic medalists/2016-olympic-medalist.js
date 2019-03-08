@@ -31,15 +31,15 @@
                           },
                           {
                               y: 26,
-                              label: 'China'
+                              label: 'PR PR China'
                           },
                           {
                               y: 27,
-                              label: 'Great Britain'
+                              label: 'United Kingdom'
                           },
                           {
                               y: 46,
-                              label: 'USA'
+                              label: 'United States'
                           }
                       ]
                   },
@@ -57,15 +57,15 @@
                           },
                           {
                               y: 18,
-                              label: 'China'
+                              label: 'PR China'
                           },
                           {
                               y: 23,
-                              label: 'Great Britain'
+                              label: 'United Kingdom'
                           },
                           {
                               y: 37,
-                              label: 'USA'
+                              label: 'United States'
                           }
                       ]
                   },
@@ -83,15 +83,15 @@
                           },
                           {
                               y: 26,
-                              label: 'China'
+                              label: 'PR China'
                           },
                           {
                               y: 17,
-                              label: 'Great Britain'
+                              label: 'United Kingdom'
                           },
                           {
                               y: 38,
-                              label: 'USA'
+                              label: 'United States'
                           }
                       ]
                   }
