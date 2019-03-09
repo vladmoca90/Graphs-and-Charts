@@ -1,7 +1,5 @@
   $(function () {
 
-      
-
       window.onload = function () {
           CanvasJS.addColorSet('medalsColors', [
               '#FFCA28',
