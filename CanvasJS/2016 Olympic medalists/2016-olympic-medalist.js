@@ -1,5 +1,7 @@
   $(function () {
 
+      
+
       window.onload = function () {
           CanvasJS.addColorSet('medalsColors', [
               '#FFCA28',
@@ -98,6 +100,7 @@
               ]
           });
 
-           $("#medalsChart").CanvasJSChart(options);
+        
+          chart.render();
       }
   });
