@@ -1,5 +1,28 @@
 window.onload = function () {
 
+    var data = [
+        [
+            'Department Stores',
+            6492917
+        ],
+        [
+            'Discount Stores',
+            7380554
+        ],
+        [
+            'Stores for Men / Women',
+            1610846
+        ],
+        [
+            'Teenage Specialty Stores',
+            950875
+        ],
+        [
+            'All other outlets',
+            900000
+        ]
+    ];
+
     var options = {
         animationEnabled: true,
         title: {
@@ -8,9 +31,9 @@ window.onload = function () {
             text: 'ACME Corporation Apparel Sales',
         },
         legend: {
-		    fontSize: 14,
-            fontWeight: 'lighter', 
-	    },
+            fontSize: 14,
+            fontWeight: 'lighter',
+        },
         data: [{
             type: 'doughnut',
             innerRadius: '55%',
@@ -18,27 +41,7 @@ window.onload = function () {
             legendText: '{label}',
             indexLabel: '{label}: #percent%',
             indexLabelFontSize: 16,
-            dataPoints: [{
-                    label: 'Department Stores',
-                    y: 6492917
-                },
-                {
-                    label: 'Discount Stores',
-                    y: 7380554
-                },
-                {
-                    label: 'Stores for Men / Women',
-                    y: 1610846
-                },
-                {
-                    label: 'Teenage Specialty Stores',
-                    y: 950875
-                },
-                {
-                    label: 'All other outlets',
-                    y: 900000
-                }
-            ]
+            dataPoints: data,
         }]
     };
     $('#salesChart').CanvasJSChart(options);
