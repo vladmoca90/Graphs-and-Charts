@@ -21,7 +21,8 @@
                       type: 'bar',
                       showInLegend: true,
                       legendText: 'Gold',
-                      dataPoints: [{
+                      dataPoints: [
+                          {
                               y: 17,
                               label: 'Germany'
                           },

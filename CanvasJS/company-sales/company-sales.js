@@ -34,7 +34,8 @@ window.onload = function () {
             fontSize: 14,
             fontWeight: 'lighter',
         },
-        data: [{
+        data: [
+        {
             type: 'doughnut',
             innerRadius: '55%',
             showInLegend: true,
@@ -44,6 +45,7 @@ window.onload = function () {
             dataPoints: data,
         }]
     };
+
     $('#salesChart').CanvasJSChart(options);
 
 }

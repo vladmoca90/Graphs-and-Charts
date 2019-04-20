@@ -47,7 +47,8 @@ $(function() {
                 suffix: "mn",
                 prefix: "$"
             },
-            data: [{
+            data: [
+            {
                 type: "area",
                 markerSize: 5,
                 xValueFormatString: "YYYY",
