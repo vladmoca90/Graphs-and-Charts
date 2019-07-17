@@ -2,14 +2,14 @@ FusionCharts.ready(function () {
     var fusioncharts = new FusionCharts({
         type: 'column2d',
         renderAt: 'oilReserves',
-        width: '700',
-        height: '400',
+        width: '800',
+        height: '450',
         dataFormat: 'json',
         dataSource: {
             // Chart Configuration
             "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
+                "caption": "Countries With Most Oil Reserves (2017-18)",
+                "subCaption": "In MMbbl (One Million barrels)",
                 "xAxisName": "Country",
                 "yAxisName": "Reserves (MMbbl)",
                 "numberSuffix": "K",
@@ -18,28 +18,28 @@ FusionCharts.ready(function () {
             // Chart Data
             "data": [{
                 "label": "Venezuela",
-                "value": "290"
+                "value": "320"
             }, {
-                "label": "Saudi",
-                "value": "260"
+                "label": "Saudi Arabia",
+                "value": "225"
             }, {
                 "label": "Canada",
                 "value": "180"
             }, {
                 "label": "Iran",
-                "value": "140"
+                "value": "150"
             }, {
                 "label": "Russia",
-                "value": "115"
+                "value": "125"
             }, {
                 "label": "UAE",
                 "value": "100"
             }, {
-                "label": "US",
-                "value": "30"
+                "label": "USA",
+                "value": "80"
             }, {
-                "label": "China",
-                "value": "30"
+                "label": "PR China",
+                "value": "65"
             }]
         }
     });
