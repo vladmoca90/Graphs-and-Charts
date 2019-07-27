@@ -35,7 +35,7 @@ FusionCharts.ready(function () {
                 'label': 'UAE',
                 'value': '100'
             }, {
-                'label': 'USA',
+                'label': 'United States',
                 'value': '80'
             }, {
                 'label': 'PR China',
