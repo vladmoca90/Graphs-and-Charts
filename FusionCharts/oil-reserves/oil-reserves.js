@@ -1,76 +1,47 @@
-var data = {
-  "chart": {
-    "caption": "Countries With Most Oil Reserves [2017-18]",
-    "subCaption": "In MMbbl = One Million barrels",
-    "xAxisName": "Country",
-    "yAxisName": "Reserves (MMbbl)",
-    "numberSuffix": "K",
-    "theme": "fusion"
-  },
-  "data": [
-    {
-      "label": "Venezuela",
-      "value": "290"
-    },
-    {
-      "label": "Saudi",
-      "value": "260"
-    },
-    {
-      "label": "Canada",
-      "value": "180"
-    },
-    {
-      "label": "Iran",
-      "value": "140"
-    },
-    {
-      "label": "Russia",
-      "value": "115"
-    },
-    {
-      "label": "UAE",
-      "value": "100"
-    },
-    {
-      "label": "US",
-      "value": "30"
-    },
-    {
-      "label": "China",
-      "value": "30"
-    }
-  ]
-}
-
-/**
- * Assuming you have installed fusioncharts using npm
- * Following code snippet can be used
-*/
-var FusionCharts = require('fusioncharts');
-var Charts = require('fusioncharts/fusioncharts.charts');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-var $ = require('jquery');
-var jQueryFusionCharts = require('jquery-fusioncharts');
-
-Charts(FusionCharts); // Resolve Charts as dependency for FusionCharts.
-FusionTheme(FusionCharts);  // Resolve Fusion theme as dependency for FusionCharts
-jQueryFusionCharts(FusionCharts); // Resolve FusionCharts as dependency for jqueryFusionCharts
-
-$(function () {
-  $('#oilReserves').insertFusionCharts({
-    type: 'column2d',
-    width: '600',
-    height: '400',
-    dataFormat: 'json',
-    dataSource:  data 
-  });
+FusionCharts.ready(function () {
+    var fusioncharts = new FusionCharts({
+        type: 'column2d',
+        renderAt: 'oilReserves',
+        width: '800',
+        height: '450',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart Configuration
+            'chart': {
+                'caption': 'Countries With Most Oil Reserves (2017-18)',
+                'subCaption': 'In MMbbl (One Million barrels)',
+                'xAxisName': 'Country',
+                'yAxisName': 'Reserves (MMbbl)',
+                'numberSuffix': 'K',
+                'theme': 'fusion',
+            },
+            // Chart Data
+            'data': [{
+                'label': 'Venezuela',
+                'value': '320'
+            }, {
+                'label': 'Saudi Arabia',
+                'value': '225'
+            }, {
+                'label': 'Canada',
+                'value': '180'
+            }, {
+                'label': 'Iran',
+                'value': '150'
+            }, {
+                'label': 'Russia',
+                'value': '125'
+            }, {
+                'label': 'UAE',
+                'value': '100'
+            }, {
+                'label': 'USA',
+                'value': '80'
+            }, {
+                'label': 'PR China',
+                'value': '65'
+            }]
+        }
+    });
+    fusioncharts.render();
 });
-
-/* 
-NOTE: 
-  * In case you downloaded fusioncharts in zipped format
-  * var FusionCharts = require('/path/to/fusioncharts/fusioncharts.js');
-  * var Charts = require('/path/to/fusioncharts/fusioncharts.charts.js');
-  * var FusionTheme = require('/path/to/fusioncharts/fusioncharts.theme.fusion.js');
-*/
