@@ -3,6 +3,7 @@ FusionCharts.ready(function () {
         type: "pie2d",
         width: "100%",
         height: "100%",
+        renderAt: 'web-services',
         dataFormat: "json",
         dataSource: {
             chart: {
