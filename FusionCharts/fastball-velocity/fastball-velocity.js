@@ -1,35 +1,67 @@
 FusionCharts.ready(function () {
     var fusioncharts = new FusionCharts({
-        type: "pie2d",
+        renderAt: 'fastball-velocity',
+        type: "line",
         width: "100%",
         height: "100%",
-        renderAt: 'web-services',
         dataFormat: "json",
         dataSource: {
             chart: {
-                caption: "Market Share of Web Servers",
-                plottooltext: "<b>$percentValue</b> of web servers run on $label servers",
-                showlegend: "1",
-                showpercentvalues: "1",
-                legendposition: "bottom",
-                usedataplotcolorforlabels: "1",
+                caption: "Average Fastball Velocity",
+                yaxisname: "Velocity (in mph)",
+                subcaption: "[2005-2016]",
+                numbersuffix: " mph",
+                rotatelabels: "1",
+                setadaptiveymin: "1",
                 theme: "fusion"
             },
             data: [{
-                    label: "Apache",
-                    value: "32647479"
+                    label: "2005",
+                    value: "89.45"
                 },
                 {
-                    label: "Microsoft",
-                    value: "22100932"
+                    label: "2006",
+                    value: "89.87"
                 },
                 {
-                    label: "Zeus",
-                    value: "14376"
+                    label: "2007",
+                    value: "89.64"
                 },
                 {
-                    label: "Other",
-                    value: "18674221"
+                    label: "2008",
+                    value: "90.13"
+                },
+                {
+                    label: "2009",
+                    value: "90.67"
+                },
+                {
+                    label: "2010",
+                    value: "90.54"
+                },
+                {
+                    label: "2011",
+                    value: "90.75"
+                },
+                {
+                    label: "2012",
+                    value: "90.8"
+                },
+                {
+                    label: "2013",
+                    value: "91.16"
+                },
+                {
+                    label: "2014",
+                    value: "91.37"
+                },
+                {
+                    label: "2015",
+                    value: "91.66"
+                },
+                {
+                    label: "2016",
+                    value: "91.8"
                 }
             ]
         }
