@@ -9,7 +9,7 @@ FusionCharts.ready(function () {
             chart: {
                 caption: "Average Fastball Velocity",
                 yaxisname: "Velocity (in mph)",
-                subcaption: "[2005-2016]",
+                subcaption: "(2005-2016)",
                 numbersuffix: " mph",
                 rotatelabels: "1",
                 setadaptiveymin: "1",
