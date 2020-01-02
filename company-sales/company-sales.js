@@ -23,6 +23,16 @@ window.onload = function () {
         ]
     ];
 
+    function addSales(data) {
+        if(data.length == 0) {
+            throw new Error('The list must be given');
+        }
+
+        for(var i = 0; i<data.length; i++) {
+
+        }
+    }
+
     var options = {
         animationEnabled: true,
         title: {
@@ -42,7 +52,7 @@ window.onload = function () {
             legendText: '{label}',
             indexLabel: '{label}: #percent%',
             indexLabelFontSize: 16,
-            dataPoints: data,
+            dataPoints: addSales(data),
         }]
     };
 
