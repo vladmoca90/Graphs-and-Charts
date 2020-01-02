@@ -1,50 +1,51 @@
 window.onload = function () {
 
-    var chart = new CanvasJS.Chart("oilReserves", {
+    var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
-        theme: "light2", // "light1", "light2", "dark1", "dark2"
+        theme: 'dark1', // 'light1', 'light2', 'dark1', 'dark2'
         title: {
-            text: "Top Oil Reserves"
+            text: 'Top Oil Reserves'
         },
         axisY: {
-            title: "Reserves(MMbbl)"
+            title: 'Reserves (MMbbl)'
         },
         data: [{
-            type: "column",
+            type: 'column',
             showInLegend: true,
-            legendMarkerColor: "grey",
-            legendText: "MMbbl = one million barrels",
-            dataPoints: [{
+            legendMarkerColor: '#eee',
+            legendText: 'MMbbl = one million barrels',
+            dataPoints: [
+                {
                     y: 300878,
-                    label: "Venezuela"
+                    label: 'Venezuela'
                 },
                 {
                     y: 266455,
-                    label: "Saudi"
+                    label: 'Saudi'
                 },
                 {
                     y: 169709,
-                    label: "Canada"
+                    label: 'Canada'
                 },
                 {
                     y: 158400,
-                    label: "Iran"
+                    label: 'Iran'
                 },
                 {
                     y: 142503,
-                    label: "Iraq"
+                    label: 'Iraq'
                 },
                 {
                     y: 101500,
-                    label: "Kuwait"
+                    label: 'Kuwait'
                 },
                 {
                     y: 97800,
-                    label: "UAE"
+                    label: 'UAE'
                 },
                 {
                     y: 80000,
-                    label: "Russia"
+                    label: 'Russia'
                 }
             ]
         }]
