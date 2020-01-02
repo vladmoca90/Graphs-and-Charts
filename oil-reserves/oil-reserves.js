@@ -1,6 +1,6 @@
 window.onload = function () {
 
-    var chart = new CanvasJS.Chart("chartContainer", {
+    var chart = new CanvasJS.Chart("oilReserves", {
         animationEnabled: true,
         theme: "light2", // "light1", "light2", "dark1", "dark2"
         title: {
@@ -49,6 +49,6 @@ window.onload = function () {
             ]
         }]
     });
-    chart.render();
 
+    chart.render();
 }
