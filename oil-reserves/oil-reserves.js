@@ -4,8 +4,11 @@ window.onload = function () {
         animationEnabled: true,
         theme: 'dark1', // 'light1', 'light2', 'dark1', 'dark2'
         title: {
+            fontSize: 32,
+            fontWeight: 'lighter',
             text: 'Top Oil Reserves'
         },
+        dataPointWidth: 40,
         axisY: {
             title: 'Reserves (MMbbl)'
         },
