@@ -1,8 +1,19 @@
 window.onload = function () {
 
+    var data = [
+        ['Vanezuela', ],
+        ['Saudi Arabia'],
+        ['Canada'],
+        ['Iran'],
+        ['Iraq'],
+        ['Kuwait', ],
+        ['UAE'],
+        ['Russia'],
+    ]
+
     var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
-        theme: 'dark1', // 'light1', 'light2', 'dark1', 'dark2'
+        theme: 'dark1',
         title: {
             fontSize: 32,
             fontWeight: 'lighter',
@@ -24,7 +35,7 @@ window.onload = function () {
                 },
                 {
                     y: 266455,
-                    label: 'Saudi'
+                    label: 'Saudi Arabia'
                 },
                 {
                     y: 169709,
