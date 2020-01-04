@@ -19,9 +19,19 @@ window.onload = function () {
             fontWeight: 'lighter',
             text: 'Top Oil Reserves'
         },
+        legend: {
+            fontSize: 16,
+        },
+        toolTip:{
+            fontSize: 16,
+        },
         dataPointWidth: 40,
+        axisX: {
+            labelFontSize: 14
+        },
         axisY: {
-            title: 'Reserves (MMbbl)'
+            title: 'Reserves (MMbbl)',
+            labelFontSize: 14,
         },
         data: [{
             type: 'column',
