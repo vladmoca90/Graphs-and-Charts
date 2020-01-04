@@ -1,14 +1,14 @@
 window.onload = function () {
 
     var data = [
-        ['Vanezuela', ],
-        ['Saudi Arabia'],
-        ['Canada'],
-        ['Iran'],
-        ['Iraq'],
-        ['Kuwait', ],
-        ['UAE'],
-        ['Russia'],
+        ['Vanezuela', 300878],
+        ['Saudi Arabia', 266455],
+        ['Canada', 169709],
+        ['Iran', 158400],
+        ['Iraq', 142503],
+        ['Kuwait', 101500],
+        ['UAE', 97800],
+        ['Russia', 80000],
     ]
 
     var chart = new CanvasJS.Chart('oilReserves', {
