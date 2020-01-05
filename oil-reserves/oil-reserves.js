@@ -9,7 +9,20 @@ window.onload = function () {
         ['Kuwait', 101500],
         ['UAE', 97800],
         ['Russia', 80000],
-    ]
+    ];
+
+    var reserves = [];
+
+    function showOilReserves(data) {
+        if(!data) {
+            throw new Error('The list must be provided');
+        }
+        if(data.length == 0) {
+            throw new Error('The list cannot be empty');
+        }
+    }
+
+    showOilReserves(data);
 
     var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
