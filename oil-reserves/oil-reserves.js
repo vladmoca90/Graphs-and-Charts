@@ -1,6 +1,6 @@
 window.onload = function () {
 
-    var data = [
+    var graphProp = [
         ['Venezuela', 300878],
         ['Saudi Arabia', 266455],
         ['Canada', 169709],
@@ -13,25 +13,25 @@ window.onload = function () {
 
     var oilReserves = [];
 
-    function showOilReserves(data) {
-        if (!data) {
+    function showOilReserves(graphProp) {
+        if (!graphProp) {
             throw new Error('The list must be provided');
         }
-        if (data.length == 0) {
+        if (graphProp.length == 0) {
             throw new Error('The list cannot be empty');
         }
 
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < graphProp.length; i++) {
             var reserves = new Object();
 
-            reserves.y = data[i][1];
-            reserves.label = data[i][0];
+            reserves.y = graphProp[i][1];
+            reserves.label = graphProp[i][0];
 
             oilReserves.push(reserves);
         }
     }
 
-    showOilReserves(data);
+    showOilReserves(graphProp);
 
     var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
