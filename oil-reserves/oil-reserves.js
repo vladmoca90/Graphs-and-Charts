@@ -24,12 +24,10 @@ window.onload = function () {
         for (var i = 0; i < data.length; i++) {
             var oilReserves = new Object();
 
-            for (var j = 0; j < data[i].length; j++) {
-                oilReserves.y = data[i][i + 1];
-                oilReserves.label = data[i][i];
+            oilReserves.y = data[i][1];
+            oilReserves.label = data[i][0];
 
-                return reserves.push(oilReserves);
-            }
+            reserves.push(oilReserves);
         }
     }
 
