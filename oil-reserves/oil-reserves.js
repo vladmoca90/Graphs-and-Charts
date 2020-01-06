@@ -38,11 +38,13 @@ window.onload = function () {
         theme: 'dark1',
         title: {
             fontSize: 32,
-            fontWeight: 'lighter',
+            fontWeight: 'normal',
+            margin: 25,
             text: 'Top Oil Reserves'
         },
         legend: {
             fontSize: 16,
+            markerMargin: 10,
         },
         toolTip: {
             fontSize: 16,
@@ -57,6 +59,7 @@ window.onload = function () {
         },
         data: [{
             type: 'column',
+            bevelEnabled: true,
             showInLegend: true,
             legendMarkerColor: '#eee',
             legendText: 'MMbbl = one million barrels',
