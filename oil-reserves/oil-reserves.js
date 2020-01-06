@@ -14,12 +14,20 @@ window.onload = function () {
     var reserves = [];
 
     function showOilReserves(data) {
-        if(!data) {
+        if (!data) {
             throw new Error('The list must be provided');
         }
-        if(data.length == 0) {
+        if (data.length == 0) {
             throw new Error('The list cannot be empty');
         }
+
+        for (var i = 0; i < data.length; i++) {
+            var oilReserves = new Object();
+            oilReserves.y = data[i][2];
+            oilReserves.label = data[i][1];
+        }
+
+        return reserves.push(oilReserves);
     }
 
     showOilReserves(data);
@@ -35,7 +43,7 @@ window.onload = function () {
         legend: {
             fontSize: 16,
         },
-        toolTip:{
+        toolTip: {
             fontSize: 16,
         },
         dataPointWidth: 40,
@@ -51,40 +59,7 @@ window.onload = function () {
             showInLegend: true,
             legendMarkerColor: '#eee',
             legendText: 'MMbbl = one million barrels',
-            dataPoints: [
-                {
-                    y: 300878,
-                    label: 'Venezuela'
-                },
-                {
-                    y: 266455,
-                    label: 'Saudi Arabia'
-                },
-                {
-                    y: 169709,
-                    label: 'Canada'
-                },
-                {
-                    y: 158400,
-                    label: 'Iran'
-                },
-                {
-                    y: 142503,
-                    label: 'Iraq'
-                },
-                {
-                    y: 101500,
-                    label: 'Kuwait'
-                },
-                {
-                    y: 97800,
-                    label: 'UAE'
-                },
-                {
-                    y: 80000,
-                    label: 'Russia'
-                }
-            ]
+            dataPoints: reserves
         }]
     });
 
