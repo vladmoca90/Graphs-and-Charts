@@ -11,7 +11,7 @@ window.onload = function () {
         ['Russia', 80000],
     ];
 
-    var reserves = [];
+    var oilReserves = [];
 
     function showOilReserves(data) {
         if (!data) {
@@ -22,12 +22,12 @@ window.onload = function () {
         }
 
         for (var i = 0; i < data.length; i++) {
-            var oilReserves = new Object();
+            var reserves = new Object();
 
-            oilReserves.y = data[i][1];
-            oilReserves.label = data[i][0];
+            reserves.y = data[i][1];
+            reserves.label = data[i][0];
 
-            reserves.push(oilReserves);
+            oilReserves.push(reserves);
         }
     }
 
@@ -60,7 +60,7 @@ window.onload = function () {
             showInLegend: true,
             legendMarkerColor: '#eee',
             legendText: 'MMbbl = one million barrels',
-            dataPoints: reserves
+            dataPoints: oilReserves
         }]
     });
 
