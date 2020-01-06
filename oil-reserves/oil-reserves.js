@@ -1,7 +1,7 @@
 window.onload = function () {
 
     var data = [
-        ['Vanezuela', 300878],
+        ['Venezuela', 300878],
         ['Saudi Arabia', 266455],
         ['Canada', 169709],
         ['Iran', 158400],
@@ -23,11 +23,14 @@ window.onload = function () {
 
         for (var i = 0; i < data.length; i++) {
             var oilReserves = new Object();
-            oilReserves.y = data[i][2];
-            oilReserves.label = data[i][1];
-        }
 
-        return reserves.push(oilReserves);
+            for (var j = 0; j < data[i].length; j++) {
+                oilReserves.y = data[i][i + 1];
+                oilReserves.label = data[i][i];
+
+                return reserves.push(oilReserves);
+            }
+        }
     }
 
     showOilReserves(data);
