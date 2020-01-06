@@ -51,11 +51,13 @@ window.onload = function () {
         },
         dataPointWidth: 40,
         axisX: {
-            labelFontSize: 14
+            labelFontSize: 14,
+            tickLength: 15,
         },
         axisY: {
             title: 'Reserves (MMbbl)',
             labelFontSize: 14,
+            tickLength: 15,
         },
         data: [{
             type: 'column',
