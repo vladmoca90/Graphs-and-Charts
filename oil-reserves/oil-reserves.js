@@ -39,7 +39,8 @@ window.onload = function () {
         title: {
             fontSize: 32,
             fontWeight: 'normal',
-            margin: 25,
+            margin: 0,
+            padding: 20,
             text: 'Top Oil Reserves'
         },
         legend: {
