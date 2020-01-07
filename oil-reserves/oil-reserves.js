@@ -55,9 +55,10 @@ window.onload = function () {
             tickLength: 15,
         },
         axisY: {
-            title: 'Reserves (MMbbl)',
+            gridColor: '#aaa',
             labelFontSize: 14,
             tickLength: 15,
+            title: 'Reserves (MMbbl)',
         },
         data: [{
             type: 'column',
