@@ -9,6 +9,9 @@ window.onload = function () {
         ['Kuwait', 101500],
         ['UAE', 97800],
         ['Russia', 80000],
+        ['Libya', 48000],
+        ['Nigeria', 37062],
+        ['United States', 35000],
     ];
 
     var oilReserves = [];
