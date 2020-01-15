@@ -39,6 +39,10 @@ $(function() {
         var options = {
             animationEnabled: true,  
             title:{
+                fontSize: 28,
+                fontWeight: 'normal',
+                margin: 0,
+                padding: 15,
                 text: "Company Revenue by Year"
             },
             axisY: {
