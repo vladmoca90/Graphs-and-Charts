@@ -16,8 +16,11 @@ $(function() {
      var revenue = [];
 
     function showRevenue(data) {
-        if(data.length == 0) {
+        if(!data) {
             throw new Error('The list must be given');
+        }
+        if(data.length == 0) {
+            throw new Error('The list cannot be empty');
         }
 
         for(var i = 0; i < data.length; i++) {
