@@ -36,8 +36,24 @@ window.onload = function () {
 
     showOilReserves(graphProp);
 
+    CanvasJS.addColorSet('countriesColors',
+        [
+            '#CB0200',
+            '#FFB500',
+            '#0567A8',
+            '#3CB371',
+            '#DEADAF',
+            '#A9A6A6',
+            '#E35218',
+            '#D2EA9D',
+            '#6D4F8F',
+            '#5A5255',
+            '#00FF00',
+        ]);
+
     var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
+        colorSet: 'countriesColors',
         theme: 'dark1',
         title: {
             fontSize: 32,
@@ -59,16 +75,16 @@ window.onload = function () {
             tickLength: 15,
         },
         axisY: {
-            gridColor: '#aaa',
+            gridColor: '#AAA',
             labelFontSize: 14,
-            tickLength: 15,
+            tickLength: 5,
             title: 'Reserves (MMbbl)',
         },
         data: [{
             type: 'column',
             bevelEnabled: true,
             showInLegend: true,
-            legendMarkerColor: '#eee',
+            legendMarkerColor: '#EEE',
             legendText: 'MMbbl = one million barrels',
             dataPoints: oilReserves
         }]
