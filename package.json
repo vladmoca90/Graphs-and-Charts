@@ -5,12 +5,13 @@
   "main": "gulpfile.js",
   "dependencies": {
     "fusioncharts": "^3.14.0",
-    "gulp": "^3.9.1",
     "http-server": "^0.11.1",
     "jasmine": "^3.1.0",
     "jquery-fusioncharts": "^1.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
