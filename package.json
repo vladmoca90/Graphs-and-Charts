@@ -1,0 +1,26 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "CSS-Practice",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+     "gulp": "^4.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmoca90/HTML-CSS.git"
+  },
+  "author": "ag_dubs <vladmoca90@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladmoca90/HTML-CSS/issues"
+  },
+  "homepage": "https://github.com/vladmoca90/HTML-CSS#readme"
+}
