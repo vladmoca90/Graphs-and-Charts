@@ -1,21 +1,3 @@
-var data = [
-    {
-        medal: 'Gold',
-        countries: [],
-        number: [],
-    },
-    {
-        medal: 'Silver',
-        countries: [],
-        number: [],
-    },
-    {
-        medal: '',
-        countries: [],
-        number: [],
-    },
-];
-
 var colors = ['#FFCA28', '#BDBDBD', '#CC9966'];
 
 $(function () {
@@ -29,8 +11,21 @@ $(function () {
                 padding: 20,
                 text: '2016 Summer Olympics medal count'
             },
+            legend: {
+                fontFamily: 'tahoma',
+                fontSize: 14,
+            },
+            toolTip: {
+                enabled: false,
+            },
+            axisX: {
+                labelFontSize: 14,
+                margin: 10,
+            },
             axisY: {
+                labelFontSize: 14,
                 gridColor: '#ddd',
+                marginRight: 10,
             },
             data: [{
                     type: 'bar',
