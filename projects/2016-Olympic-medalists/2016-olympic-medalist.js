@@ -12,20 +12,24 @@ $(function () {
                 text: '2016 Summer Olympics medal count'
             },
             legend: {
-                fontFamily: 'tahoma',
-                fontSize: 14,
+                fontSize: 16,
+                fontWeight: 'normal',
             },
             toolTip: {
-                enabled: false,
+                enabled: true,
+                fontSize: 13,
             },
             axisX: {
                 labelFontSize: 14,
                 margin: 10,
+                tickColor: 'transparent',
+                tickLength: 10,
             },
             axisY: {
                 labelFontSize: 14,
-                gridColor: '#ddd',
-                marginRight: 10,
+                gridColor: '#ccc',
+                tickColor: 'transparent',
+                tickLength: 10,
             },
             data: [{
                     type: 'bar',
