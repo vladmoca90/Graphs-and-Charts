@@ -5,22 +5,37 @@ $(function () {
         var chart = new CanvasJS.Chart("dailyCases", {
             animationEnabled: true,
             title: {
-                text: "Worldwide coronavirus daily cases"
+                fontSize: 28,
+                fontWeight: 'normal',
+                margin: 0,
+                text: "2020 Worldwide coronavirus daily cases",
             },
+            subtitles: [{
+                text: "(Linear scale)",
+                fontSize: 18,
+                fontWeight: 'lighter',
+            }],
             axisX: {
+                labelFontSize: 14,
+                lineColor: '#ccc',
+                gridColor: '#ccc',
+                tickColor: '#ccc',
+                tickLength: 5,
                 valueFormatString: "DD MMM"
             },
             axisY: {
-                title: "Number of cases",
+                labelFontSize: 14,
+                lineColor: '#ccc',
+                gridColor: '#ccc',
+                tickColor: '#ccc',
+                tickLength: 5,
+                title: "Total coronavirus cases",
                 includeZero: false,
-                scaleBreaks: {
-                    autoCalculate: true
-                }
             },
             data: [{
                 type: "line",
                 xValueFormatString: "DD MMM",
-                color: "#F08080",
+                color: "#7bd6ed",
                 dataPoints: [{
                         x: new Date(2017, 0, 1),
                         y: 610
