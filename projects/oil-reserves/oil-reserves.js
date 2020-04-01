@@ -1,40 +1,39 @@
+var data = [
+    ['Venezuela', 300878],
+    ['Saudi Arabia', 266455],
+    ['Canada', 169709],
+    ['Iran', 158400],
+    ['Iraq', 142503],
+    ['Kuwait', 101500],
+    ['UAE', 97800],
+    ['Russia', 80000],
+    ['Libya', 48000],
+    ['Nigeria', 37062],
+    ['United States', 35000],
+];
+
 window.onload = function () {
-
-    var graphProp = [
-        ['Venezuela', 300878],
-        ['Saudi Arabia', 266455],
-        ['Canada', 169709],
-        ['Iran', 158400],
-        ['Iraq', 142503],
-        ['Kuwait', 101500],
-        ['UAE', 97800],
-        ['Russia', 80000],
-        ['Libya', 48000],
-        ['Nigeria', 37062],
-        ['United States', 35000],
-    ];
-
     var oilReserves = [];
 
-    function showOilReserves(graphProp) {
-        if (!graphProp) {
+    function showOilReserves(data) {
+        if (!data) {
             throw new Error('The list must be provided');
         }
-        if (graphProp.length == 0) {
+        if (data.length == 0) {
             throw new Error('The list cannot be empty');
         }
 
-        for (var i = 0; i < graphProp.length; i++) {
+        for (var i = 0; i < data.length; i++) {
             var reserves = new Object();
 
-            reserves.y = graphProp[i][1];
-            reserves.label = graphProp[i][0];
+            reserves.y = data[i][1];
+            reserves.label = data[i][0];
 
             oilReserves.push(reserves);
         }
     }
 
-    showOilReserves(graphProp);
+    showOilReserves(data);
 
     CanvasJS.addColorSet('countriesColors',
         [
@@ -67,16 +66,16 @@ window.onload = function () {
             markerMargin: 10,
         },
         toolTip: {
-            fontSize: 16,
+            fontSize: 15,
         },
         dataPointWidth: 40,
         axisX: {
-            labelFontSize: 14,
+            labelFontSize: 13,
             tickLength: 15,
         },
         axisY: {
             gridColor: '#AAA',
-            labelFontSize: 14,
+            labelFontSize: 13,
             tickLength: 5,
             title: 'Reserves (MMbbl)',
         },
