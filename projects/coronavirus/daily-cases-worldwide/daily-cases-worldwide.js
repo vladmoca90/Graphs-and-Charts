@@ -1,3 +1,53 @@
+var totalCases = [{
+        date: new Date(2020, 0, 1),
+        cases: 0
+    },
+    {
+        date: new Date(2020, 0, 17),
+        cases: 580
+    },
+    {
+        date: new Date(2020, 0, 25),
+        cases: 6058
+    },
+    {
+        date: new Date(2020, 1, 1),
+        cases: 14530
+    },
+    {
+        date: new Date(2020, 1, 7),
+        cases: 28266
+    },
+    {
+        date: new Date(2020, 1, 11),
+        cases: 45134
+    },
+    {
+        date: new Date(2020, 1, 21),
+        cases: 77675
+    },
+    {
+        date: new Date(2020, 2, 7),
+        cases: 106099
+    },
+    {
+        date: new Date(2020, 2, 16),
+        cases: 182414
+    },
+    {
+        date: new Date(2020, 2, 24),
+        cases: 422574
+    },
+    {
+        date: new Date(2020, 2, 28),
+        cases: 663127
+    },
+    {
+        date: new Date(2020, 2, 31),
+        cases: 858355
+    },
+]
+
 $(function () {
 
     window.onload = function () {
@@ -15,7 +65,7 @@ $(function () {
                 fontSize: 18,
                 fontWeight: 'lighter',
             }],
-            axisX: {
+            axisdate: {
                 labelFontSize: 14,
                 lineColor: '#ccc',
                 gridColor: '#ccc',
@@ -23,7 +73,7 @@ $(function () {
                 tickLength: 5,
                 valueFormatString: "DD MMM"
             },
-            axisY: {
+            axiscases: {
                 labelFontSize: 14,
                 lineColor: '#ccc',
                 gridColor: '#ccc',
@@ -36,56 +86,7 @@ $(function () {
                 type: "line",
                 xValueFormatString: "DD MMM",
                 color: "#7bd6ed",
-                dataPoints: [
-                     {
-                        x: new Date(2020, 0, 1),
-                        y: 0
-                    },
-                    {
-                        x: new Date(2020, 1, 22),
-                        y: 580
-                    },
-                     {
-                        x: new Date(2020, 1, 25),
-                        y: 6058
-                    },
-                    {
-                        x: new Date(2020, 2, 1),
-                        y: 14530
-                    },
-                    {
-                        x: new Date(2020, 2, 7),
-                        y: 28266
-                    },
-                     {
-                        x: new Date(2020, 2, 11),
-                        y: 45134
-                    },
-                    {
-                        x: new Date(2020, 2, 21),
-                        y: 77675
-                    },
-                     {
-                        x: new Date(2020, 3, 7),
-                        y: 106099
-                    },
-                     {
-                        x: new Date(2020, 3, 16),
-                        y: 182414
-                    },
-                     {
-                        x: new Date(2020, 3, 24),
-                        y: 422574
-                    },
-                     {
-                        x: new Date(2020, 3, 28),
-                        y: 663127
-                    },
-                     {
-                        x: new Date(2020, 3, 31),
-                        y: 858355
-                    },
-                ]
+                dataPoints: ,
             }]
         });
 
