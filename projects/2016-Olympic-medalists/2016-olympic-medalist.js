@@ -14,6 +14,7 @@ $(function () {
             legend: {
                 fontSize: 16,
                 fontWeight: 'normal',
+                markerMargin: 15,
             },
             toolTip: {
                 enabled: true,
@@ -21,16 +22,19 @@ $(function () {
             },
             axisX: {
                 labelFontSize: 14,
+                lineColor: '#ccc',
                 margin: 10,
-                tickColor: 'transparent',
-                tickLength: 10,
+                tickColor: '#ccc',
+                tickLength: 5,
             },
             axisY: {
                 labelFontSize: 14,
+                lineColor: '#ccc',
                 gridColor: '#ccc',
-                tickColor: 'transparent',
-                tickLength: 10,
+                tickColor: '#ccc',
+                tickLength: 5,
             },
+            dataPointMaxWidth: 17,
             data: [{
                     type: 'bar',
                     showInLegend: true,
