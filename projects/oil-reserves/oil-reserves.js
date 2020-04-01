@@ -12,6 +12,9 @@ var data = [
     ['United States', 35000],
 ];
 
+var colors = ['#CB0200', '#FFB500', '#0567A8', '#3CB371', '#DEADAF', '#A9A6A6', '#E35218', 
+            '#D2EA9D', '#6D4F8F', '#5A5255', '#00FF00'];
+
 window.onload = function () {
     var oilReserves = [];
 
@@ -35,27 +38,14 @@ window.onload = function () {
 
     showOilReserves(data);
 
-    CanvasJS.addColorSet('countriesColors',
-        [
-            '#CB0200',
-            '#FFB500',
-            '#0567A8',
-            '#3CB371',
-            '#DEADAF',
-            '#A9A6A6',
-            '#E35218',
-            '#D2EA9D',
-            '#6D4F8F',
-            '#5A5255',
-            '#00FF00',
-        ]);
+    CanvasJS.addColorSet('countriesColors', colors);
 
     var chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
         colorSet: 'countriesColors',
         theme: 'dark1',
         title: {
-            fontSize: 32,
+            fontSize: 28,
             fontWeight: 'normal',
             margin: 0,
             padding: 20,
