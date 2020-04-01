@@ -52,7 +52,7 @@ $(function () {
 
     window.onload = function () {
 
-        var chart = new CanvasJS.Chart("dailyCases", {
+        var chart = new CanvasJS.Chart("dailyCasesLinear", {
             animationEnabled: true,
             title: {
                 fontSize: 28,
