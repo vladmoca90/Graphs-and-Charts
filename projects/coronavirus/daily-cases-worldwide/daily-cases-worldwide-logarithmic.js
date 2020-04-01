@@ -65,15 +65,16 @@ $(function () {
                 fontSize: 18,
                 fontWeight: 'lighter',
             }],
-            axisdate: {
+            axisX: {
                 labelFontSize: 14,
                 lineColor: '#ccc',
+                logarithmic: true,
                 gridColor: '#ccc',
                 tickColor: '#ccc',
                 tickLength: 5,
                 valueFormatString: "DD MMM"
             },
-            axiscases: {
+            axisY: {
                 labelFontSize: 14,
                 lineColor: '#ccc',
                 gridColor: '#ccc',
