@@ -23,6 +23,8 @@ $(function () {
             axisX: {
                 labelFontSize: 14,
                 lineColor: '#ccc',
+                gridColor: '#ccc',
+                gridThickness: 1,
                 margin: 10,
                 tickColor: '#ccc',
                 tickLength: 5,
@@ -34,7 +36,7 @@ $(function () {
                 tickColor: '#ccc',
                 tickLength: 5,
             },
-            dataPointMaxWidth: 17,
+            dataPointMaxWidth: 16,
             data: [{
                     type: 'bar',
                     showInLegend: true,
