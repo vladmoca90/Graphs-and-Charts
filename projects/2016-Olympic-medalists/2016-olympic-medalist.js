@@ -1,3 +1,7 @@
+  var data = [
+
+  ];
+  
   $(function () {
 
       window.onload = function () {
