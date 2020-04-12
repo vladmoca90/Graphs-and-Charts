@@ -64,7 +64,7 @@ window.onload = function () {
             tickLength: 15,
         },
         axisY: {
-            gridColor: '#AAA',
+            gridColor: '#aaa',
             labelFontSize: 13,
             tickLength: 10,
             title: 'Reserves (MMbbl)',
@@ -73,7 +73,7 @@ window.onload = function () {
             type: 'column',
             bevelEnabled: true,
             showInLegend: true,
-            legendMarkerColor: '#EEE',
+            legendMarkerColor: '#eee',
             legendText: 'MMbbl = one million barrels',
             dataPoints: oilReserves
         }]

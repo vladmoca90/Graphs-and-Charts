@@ -1,4 +1,4 @@
-var data = [
+const data = [
     [new Date(2000, 0), '2289000'],
     [new Date(2001, 0), '1946000'],
     [new Date(2002, 0), '1270000'],
@@ -13,7 +13,7 @@ var data = [
 ];
 
 $(function () {
-    var revenue = [];
+    let revenue = [];
 
     function showRevenue(data) {
         if (!data) {
@@ -23,8 +23,8 @@ $(function () {
             throw new Error('The list cannot be empty');
         }
 
-        for (var i = 0; i < data.length; i++) {
-            var points = {};
+        for (let i = 0; i < data.length; i++) {
+            let points = {};
 
             points.x = data[i][0];
             points.y = parseInt(data[i][1]);
@@ -37,7 +37,7 @@ $(function () {
     showRevenue(data);
 
     window.onload = function () {
-        var options = {
+        let options = {
             animationEnabled: true,
             title: {
                 fontSize: 28,

@@ -1,4 +1,5 @@
-var totalCases = [{
+const totalCases = [
+    {
         date: new Date(2020, 0, 1),
         cases: 0
     },
@@ -49,10 +50,8 @@ var totalCases = [{
 ]
 
 $(function () {
-
     window.onload = function () {
-
-        var chart = new CanvasJS.Chart("dailyCasesLogarithmic", {
+        const chart = new CanvasJS.Chart("dailyCasesLogarithmic", {
             animationEnabled: true,
             title: {
                 fontSize: 28,

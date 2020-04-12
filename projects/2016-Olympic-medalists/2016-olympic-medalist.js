@@ -1,9 +1,9 @@
-var colors = ['#FFCA28', '#BDBDBD', '#CC9966'];
+const colors = ['#FFCA28', '#BDBDBD', '#CC9966'];
 
 $(function () {
     window.onload = function () {
         CanvasJS.addColorSet('medalsColors', colors);
-        var chart = new CanvasJS.Chart('medalsChart', {
+        let chart = new CanvasJS.Chart('medalsChart', {
             colorSet: 'medalsColors',
             title: {
                 fontFamily: 'Tahoma',
