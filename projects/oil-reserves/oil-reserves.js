@@ -1,4 +1,4 @@
-var data = [
+const data = [
     ['Venezuela', 300878],
     ['Saudi Arabia', 266455],
     ['Canada', 169709],
@@ -12,11 +12,12 @@ var data = [
     ['United States', 35000],
 ];
 
-var colors = ['#CB0200', '#FFB500', '#0567A8', '#3CB371', '#DEADAF', '#A9A6A6', '#E35218', 
-            '#D2EA9D', '#6D4F8F', '#5A5255', '#00FF00'];
+const colors = ['#CB0200', '#FFB500', '#0567A8', '#3CB371', '#DEADAF', '#A9A6A6', '#E35218',
+    '#D2EA9D', '#6D4F8F', '#5A5255', '#00FF00'
+];
 
 window.onload = function () {
-    var oilReserves = [];
+    let oilReserves = [];
 
     function showOilReserves(data) {
         if (!data) {
@@ -26,12 +27,11 @@ window.onload = function () {
             throw new Error('The list cannot be empty');
         }
 
-        for (var i = 0; i < data.length; i++) {
-            var reserves = new Object();
+        for (let i = 0; i < data.length; i++) {
+            let reserves = new Object();
 
             reserves.y = data[i][1];
             reserves.label = data[i][0];
-
             oilReserves.push(reserves);
         }
     }
@@ -40,7 +40,7 @@ window.onload = function () {
 
     CanvasJS.addColorSet('countriesColors', colors);
 
-    var chart = new CanvasJS.Chart('oilReserves', {
+    const chart = new CanvasJS.Chart('oilReserves', {
         animationEnabled: true,
         colorSet: 'countriesColors',
         theme: 'dark1',
@@ -66,7 +66,7 @@ window.onload = function () {
         axisY: {
             gridColor: '#AAA',
             labelFontSize: 13,
-            tickLength: 5,
+            tickLength: 10,
             title: 'Reserves (MMbbl)',
         },
         data: [{
