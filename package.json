@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
+    "canvasjs": "^1.8.3",
     "fusioncharts": "^3.14.0",
     "http-server": "^0.12.3",
     "jasmine": "^3.1.0",
