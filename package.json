@@ -1,0 +1,26 @@
+{
+  "name": "graphs-and-charts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "canvasjs": "^1.8.3",
+    "gulp": "^3.9.1",
+    "http-server": "^0.12.3",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmoca90/Graphs-and-Charts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladmoca90/Graphs-and-Charts/issues"
+  },
+  "homepage": "https://github.com/vladmoca90/Graphs-and-Charts#readme"
+}
