@@ -2,7 +2,9 @@
   "name": "graphs-and-charts",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.32.6"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-minify": "^3.1.0",
