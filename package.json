@@ -1,20 +1,20 @@
 {
   "name": "graphs-and-charts",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "gulp": "^4.0.2",
-    "sass": "^1.32.6",
-    "scss": "^0.2.4"
-  },
-  "devDependencies": {
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.1.0",
     "http-server": "^0.12.3",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "scss": "^0.2.4",
+    "sass": "^1.32.6"
   },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,5 @@
   "bugs": {
     "url": "https://github.com/vladmoca90/Graphs-and-Charts/issues"
   },
-  "homepage": "https://github.com/vladmoca90/Graphs-and-Charts#readme",
-  "description": ""
+  "homepage": "https://github.com/vladmoca90/Graphs-and-Charts#readme"
 }
