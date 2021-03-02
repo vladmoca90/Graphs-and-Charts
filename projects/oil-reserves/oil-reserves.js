@@ -6,7 +6,7 @@ const data = [
     ['Iraq', 142503],
     ['Kuwait', 101500],
     ['UAE', 97800],
-    ['Russia', 80000],
+    ['Russian Federation', 80000],
     ['Libya', 48000],
     ['Nigeria', 37062],
     ['United States', 35000],
@@ -19,7 +19,7 @@ const colors = ['#CB0200', '#FFB500', '#0567A8', '#3CB371', '#DEADAF', '#A9A6A6'
 window.onload = function () {
     let oilReserves = [];
 
-    function showOilReserves(data) {
+    const showOilReserves = data => {
         if (!data) {
             throw new Error('The list must be provided');
         }
