@@ -52,7 +52,7 @@ $(function () {
                         },
                         {
                             y: 26,
-                            label: 'PR PR China'
+                            label: 'PR China'
                         },
                         {
                             y: 27,
