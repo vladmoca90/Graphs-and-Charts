@@ -15,7 +15,7 @@ const data = [
 $(function () {
     let revenue = [];
 
-    function showRevenue(data) {
+    const showRevenue = data => {
         if (!data) {
             throw new Error('The list must be given');
         }
