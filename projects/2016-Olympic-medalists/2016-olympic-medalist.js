@@ -48,7 +48,7 @@ $(function () {
                         },
                         {
                             y: 19,
-                            label: 'Russia'
+                            label: 'Russian Federation'
                         },
                         {
                             y: 26,
@@ -74,7 +74,7 @@ $(function () {
                         },
                         {
                             y: 17,
-                            label: 'Russia'
+                            label: 'Russian Federation'
                         },
                         {
                             y: 18,
@@ -100,7 +100,7 @@ $(function () {
                         },
                         {
                             y: 19,
-                            label: 'Russia'
+                            label: 'Russian Federation'
                         },
                         {
                             y: 26,
