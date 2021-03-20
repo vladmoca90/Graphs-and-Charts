@@ -1,7 +1,6 @@
 {
   "name": "graphs-and-charts",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "gulp": "^4.0.2",
@@ -25,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/vladmoca90/Graphs-and-Charts/issues"
   },
-  "homepage": "https://github.com/vladmoca90/Graphs-and-Charts#readme"
+  "homepage": "https://github.com/vladmoca90/Graphs-and-Charts#readme",
+  "description": ""
 }
