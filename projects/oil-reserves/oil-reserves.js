@@ -73,7 +73,7 @@ window.onload = function () {
             type: 'column',
             bevelEnabled: true,
             showInLegend: true,
-            legendMarkerColor: '#ccc',
+            legendMarkerColor: '#eee',
             legendText: 'MMbbl = one million barrels',
             dataPoints: oilReserves
         }]
