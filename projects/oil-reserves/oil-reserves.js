@@ -12,8 +12,9 @@ const data = [
     ['United States', 35000],
 ];
 
-const colors = ['#CB0200', '#FFB500', '#0567A8', '#3CB371', '#DEADAF', '#A9A6A6', '#E35218',
-    '#D2EA9D', '#6D4F8F', '#5A5255', '#00FF00'
+const colors = ['#CB0200', '#FFB500', '#0567A8', '#3CB371', 
+    '#DEADAF', '#A9A6A6', '#E35218', '#D2EA9D', '#6D4F8F', 
+    '#5A5255', '#00FF00'
 ];
 
 window.onload = function () {
