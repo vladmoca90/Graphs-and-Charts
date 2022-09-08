@@ -38,84 +38,84 @@ $(function () {
             },
             dataPointMaxWidth: 16,
             data: [{
-                    type: 'bar',
-                    showInLegend: true,
-                    legendText: 'Gold',
-                    dataPoints: [
-                        {
-                            y: 17,
-                            label: 'Germany'
-                        },
-                        {
-                            y: 19,
-                            label: 'Russian Federation'
-                        },
-                        {
-                            y: 26,
-                            label: 'PR China'
-                        },
-                        {
-                            y: 27,
-                            label: 'United Kingdom'
-                        },
-                        {
-                            y: 46,
-                            label: 'United States'
-                        }
-                    ]
+                type: 'bar',
+                showInLegend: true,
+                legendText: 'Gold',
+                dataPoints: [
+                    {
+                        y: 17,
+                        label: 'Germany'
+                    },
+                    {
+                        y: 19,
+                        label: 'Russian Federation'
+                    },
+                    {
+                        y: 26,
+                        label: 'PR China'
+                    },
+                    {
+                        y: 27,
+                        label: 'United Kingdom'
+                    },
+                    {
+                        y: 46,
+                        label: 'United States'
+                    }
+                ]
+            },
+            {
+                type: 'bar',
+                showInLegend: true,
+                legendText: 'Silver',
+                dataPoints: [{
+                    y: 10,
+                    label: 'Germany'
                 },
                 {
-                    type: 'bar',
-                    showInLegend: true,
-                    legendText: 'Silver',
-                    dataPoints: [{
-                            y: 10,
-                            label: 'Germany'
-                        },
-                        {
-                            y: 17,
-                            label: 'Russian Federation'
-                        },
-                        {
-                            y: 18,
-                            label: 'PR China'
-                        },
-                        {
-                            y: 23,
-                            label: 'United Kingdom'
-                        },
-                        {
-                            y: 37,
-                            label: 'United States'
-                        }
-                    ]
+                    y: 17,
+                    label: 'Russian Federation'
                 },
                 {
-                    type: 'bar',
-                    showInLegend: true,
-                    legendText: 'Bronze',
-                    dataPoints: [{
-                            y: 15,
-                            label: 'Germany'
-                        },
-                        {
-                            y: 19,
-                            label: 'Russian Federation'
-                        },
-                        {
-                            y: 26,
-                            label: 'PR China'
-                        },
-                        {
-                            y: 17,
-                            label: 'United Kingdom'
-                        },
-                        {
-                            y: 38,
-                            label: 'United States'
-                        }
-                    ]
+                    y: 18,
+                    label: 'PR China'
+                },
+                {
+                    y: 23,
+                    label: 'United Kingdom'
+                },
+                {
+                    y: 37,
+                    label: 'United States'
                 }
+                ]
+            },
+            {
+                type: 'bar',
+                showInLegend: true,
+                legendText: 'Bronze',
+                dataPoints: [{
+                    y: 15,
+                    label: 'Germany'
+                },
+                {
+                    y: 19,
+                    label: 'Russian Federation'
+                },
+                {
+                    y: 26,
+                    label: 'PR China'
+                },
+                {
+                    y: 17,
+                    label: 'United Kingdom'
+                },
+                {
+                    y: 38,
+                    label: 'United States'
+                }
+                ]
+            }
             ]
         });
 
