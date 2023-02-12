@@ -68,52 +68,54 @@ $(function () {
                 type: 'bar',
                 showInLegend: true,
                 legendText: 'Silver',
-                dataPoints: [{
-                    y: 10,
-                    label: 'Germany'
-                },
-                {
-                    y: 17,
-                    label: 'Russian Federation'
-                },
-                {
-                    y: 18,
-                    label: 'PR China'
-                },
-                {
-                    y: 23,
-                    label: 'United Kingdom'
-                },
-                {
-                    y: 37,
-                    label: 'United States'
-                }
+                dataPoints: [
+                    {
+                        y: 10,
+                        label: 'Germany'
+                    },
+                    {
+                        y: 17,
+                        label: 'Russian Federation'
+                    },
+                    {
+                        y: 18,
+                        label: 'PR China'
+                    },
+                    {
+                        y: 23,
+                        label: 'United Kingdom'
+                    },
+                    {
+                        y: 37,
+                        label: 'United States'
+                    }
                 ]
             },
             {
                 type: 'bar',
                 showInLegend: true,
                 legendText: 'Bronze',
-                dataPoints: [{
-                    y: 15,
-                    label: 'Germany'
-                },
-                {
-                    y: 19,
-                    label: 'Russian Federation'
-                },
-                {
-                    y: 26,
-                    label: 'PR China'
-                },
-                {
-                    y: 17,
-                    label: 'United Kingdom'
-                },
-                {
-                    y: 38,
-                    label: 'United States'
-                }
+                dataPoints: [
+                    {
+                        y: 15,
+                        label: 'Germany'
+                    },
+                    {
+                        y: 19,
+                        label: 'Russian Federation'
+                    },
+                    {
+                        y: 26,
+                        label: 'PR China'
+                    },
+                    {
+                        y: 17,
+                        label: 'United Kingdom'
+                    },
+                    {
+                        y: 38,
+                        label: 'United States'
+                    }
                 ]
             }
             ]
