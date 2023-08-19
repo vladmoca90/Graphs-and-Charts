@@ -1,4 +1,4 @@
-const colors = ['#FFCA28', '#BDBDBD', '#CC9966'];
+const colors = ['#fcc723', '#cfcfcf', '#e38120'];
 
 $(function () {
     window.onload = function () {
