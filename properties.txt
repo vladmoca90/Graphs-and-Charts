@@ -1,1 +1,1 @@
-https://canvasjs.com/docs/charts/chart-options/ 
+https://canvasjs.com/docs/charts/chart-options/
